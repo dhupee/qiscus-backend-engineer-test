@@ -9,7 +9,7 @@ import (
 type divisorsOfNumber struct {
 	number       int
 	divisorCount int
-	specials     bool
+	evenDivisors bool
 }
 
 func main() {
@@ -31,6 +31,8 @@ func main() {
 
 		// parse the line
 		fmt.Println(line)
+
+		// TODO: get the divisors thingy
 
 		count++
 
