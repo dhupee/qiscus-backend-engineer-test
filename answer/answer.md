@@ -12,13 +12,19 @@
 
 ## Section Number 1
 
+Disclaimer: I've asked about what "mechanism diagram" mean in email, but haven't got the answer until the time I write this, so I will interpret such as Flowchart.
+
 ### Question Number 1
 
 TBA
 
+<!--![alt text](path) -->
+
 ### Question Number 2
 
 TBA
+
+<!--![alt text](path) -->
 
 ### Question Number 3
 
