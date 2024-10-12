@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strconv"
 )
 
 type divisorsOfNumber struct {
@@ -29,12 +30,29 @@ func main() {
 			continue
 		}
 
-		// parse the line
-		fmt.Println(line)
+		numInput, err := strconv.Atoi(line)
+		if err != nil {
+			fmt.Println(err)
+			return
+		}
 
-		// TODO: get the divisors thingy
+		// count the divisors
+		divisorCount := 0
+		var evenDivisors bool
+		for i := 1; i <= numInput; i++ {
+			if numInput%i == 0 {
+				divisorCount++
+			}
+			if divisorCount%2 == 0 {
+				evenDivisors = true
+			} else {
+				evenDivisors = false
+			}
+		}
 
 		count++
+
+		fmt.Println("Number: ", numInput, "has", divisorCount, "divisors", "even divisors:", evenDivisors)
 
 		// close the file once you've finished
 		defer file.Close()
