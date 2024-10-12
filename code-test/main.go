@@ -7,11 +7,12 @@ import (
 	"strconv"
 )
 
-type divisorsOfNumber struct {
-	number       int
-	divisorCount int
-	evenDivisors bool
-}
+// save for later use
+// type divisorsOfNumber struct {
+// 	number       int
+// 	divisorCount int
+// 	evenDivisors bool
+// }
 
 func main() {
 	// open the file
@@ -22,6 +23,7 @@ func main() {
 	}
 
 	count := 0
+	numWithEvenDivisor := 0
 	// read the file line by line using scanner
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
@@ -50,13 +52,22 @@ func main() {
 			} else {
 				evenDivisors = false
 			}
+
+		}
+
+		// count how many numbers have an even number of divisors
+		if evenDivisors {
+			numWithEvenDivisor++
 		}
 
 		// print the result
-		fmt.Println("Number: ", numInput, "has", divisorCount, "divisors", "even divisors:", evenDivisors)
+		fmt.Println("Number:", numInput, "has", divisorCount, "divisors,", "even divisors is", evenDivisors)
 		count++
 
 		// close the file once you've finished
 		defer file.Close()
 	}
+
+	fmt.Println("")
+	fmt.Println("Number that has even number of divisors: ", numWithEvenDivisor)
 }
