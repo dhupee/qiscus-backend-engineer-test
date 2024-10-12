@@ -8,7 +8,6 @@
     - [Question Number 2](#question-number-2)
     - [Question Number 3](#question-number-3)
   - [Section Number 2](#section-number-2)
-  <!--toc:end-->
 
 ## Section Number 1
 
@@ -16,15 +15,13 @@ Disclaimer: I've asked about what "mechanism diagram" mean in email, but haven't
 
 ### Question Number 1
 
-TBA
-
-<!--![alt text](path) -->
+![Flowchart of Chatapp](./diagram.png)
 
 ### Question Number 2
 
-TBA
+I haven't deep dive to Relational Database yet, so I will try to make a best as my understanding goes.
 
-<!--![alt text](path) -->
+![Database Structure](./schema-qiscus-test-2024-10-12T22_39_18.png)
 
 ### Question Number 3
 
@@ -45,3 +42,5 @@ the database schema will be different from project to project but at minimum it 
 ---
 
 ## Section Number 2
+
+<script src="https://gist.github.com/dhupee/82547e7eec86f0198bfdbfd4474e2ab7.js"></script>

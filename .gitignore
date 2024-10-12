@@ -1,2 +1,4 @@
 code-test/input.txt
+answer/out/
+answer/*png
 *.pdf
