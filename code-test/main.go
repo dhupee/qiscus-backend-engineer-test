@@ -30,6 +30,7 @@ func main() {
 			continue
 		}
 
+		// turn the line into an integer
 		numInput, err := strconv.Atoi(line)
 		if err != nil {
 			fmt.Println(err)
@@ -43,6 +44,7 @@ func main() {
 			if numInput%i == 0 {
 				divisorCount++
 			}
+			// find whether the number has an even number of divisors
 			if divisorCount%2 == 0 {
 				evenDivisors = true
 			} else {
@@ -50,9 +52,9 @@ func main() {
 			}
 		}
 
-		count++
-
+		// print the result
 		fmt.Println("Number: ", numInput, "has", divisorCount, "divisors", "even divisors:", evenDivisors)
+		count++
 
 		// close the file once you've finished
 		defer file.Close()
